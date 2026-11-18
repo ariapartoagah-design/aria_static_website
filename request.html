@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>فرم درخواست بررسی پروژه | آریا پرتو آگاه</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body class="">
+  <header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html">آریا پرتو آگاه</a><nav aria-label="منوی اصلی"><a href="index.html">خانه</a><a href="services.html">خدمات</a><a href="contact.html">تماس با ما</a></nav></div></header>
+  <main class="wrap">
+    <a class="back" href="index.html#featured-services">بازگشت به خدمات <span class="arrow" aria-hidden="true"></span></a>
+    <div class="request-layout">
+      <section class="form-panel">
+        <h1>فرم درخواست بررسی پروژه</h1>
+        <form id="request-form">
+          <div class="fields">
+            <label>نام و نام خانوادگی <small>اجباری</small><input name="name" autocomplete="name" required></label>
+            <label>شماره تماس <small>اجباری</small><input type="tel" name="phone" autocomplete="tel" placeholder="همراه یا تلفن ثابت با کد شهر" required></label>
+            <label>نام شرکت یا سازمان <small>اختیاری</small><input name="company" autocomplete="organization"></label>
+            <div><label for="city">شهر یا محل اجرای پروژه <small>اجباری</small></label><input id="city" name="city" required><label class="choice"><input type="checkbox" name="city-unknown">هنوز مشخص نیست</label></div>
+          </div>
+          <fieldset>
+            <legend>خدمات موردنیاز <small>اجباری</small></legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="service" value="barq-sanati">برق صنعتی</label>
+              <label class="choice"><input type="checkbox" name="service" value="solar">نیروگاه خورشیدی</label>
+              <label class="choice"><input type="checkbox" name="service" value="optimization">بهینه‌سازی مصرف</label>
+              <label class="choice"><input type="checkbox" name="service" value="consulting">مشاوره تخصصی</label>
+              <label class="choice"><input type="checkbox" name="service" value="energy-market">بازار انرژی</label>
+              <label class="choice"><input type="checkbox" name="service" value="export">صادرات</label>
+              <label class="choice"><input type="checkbox" name="service" value="guidance">برای انتخاب خدمت راهنمایی می‌خواهم</label>
+            </div>
+            <p id="service-error" class="error" role="alert" hidden>حداقل یک خدمت یا گزینهٔ راهنمایی را انتخاب کنید.</p>
+          </fieldset>
+          <label>توضیحات پروژه <small>اجباری</small><textarea name="description" rows="4" required></textarea></label>
+          <p class="hint">بگویید چه کاری در نظر دارید و پروژه در چه مرحله‌ای است. اگر هنوز جزئیات را نمی‌دانید، نیاز اولیه‌تان را بنویسید.</p>
+          <button class="button" type="submit" disabled>ارسال درخواست</button>
+          <p id="status" class="status" role="status"></p>
+        </form>
+      </section>
+      <aside class="form-panel contact">
+        <h2>راه‌های ارتباطی</h2>
+        <p><a class="contact-email" dir="ltr" href="tel:+982144338895">۰۲۱-۴۴۳۳۸۸۹۵</a></p>
+        <p>شنبه تا چهارشنبه، ساعت ۹ صبح تا ۱ بعدازظهر</p>
+        <p><a class="contact-email" dir="ltr" href="mailto:ariaparto.agah@gmail.com">ariaparto.agah@gmail.com</a></p>
+      </aside>
+    </div>
+    <script src="request.js"></script>
+  </main>
+  <footer class="wrap"><span>آریا پرتو آگاه</span><a href="contact.html">تماس با ما</a></footer>
+</body>
+</html>
